@@ -1,6 +1,6 @@
 .. _introduction:
 
-About Open3D
-============
+Introduction
+~~~~~~~~~~~~
 
 .. mdinclude:: ../README.md

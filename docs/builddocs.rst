@@ -1,6 +1,6 @@
 .. _builddocs:
 
-Building Documentation
+Build documentation
 ======================
 
 The main documentation and Python documentation is written in
@@ -40,18 +40,12 @@ First, install a TeX distribution such as `MacTeX <http://www.tug.org/mactex/>`_
 
 .. code-block:: bash
 
-    # For pip
-    pip install "sphinx>=3.0" sphinx-autobuild nbsphinx Pillow
+    # Install deps
+    pip install -U sphinx==3.5.4 sphinx-rtd-theme==0.5.1 nbsphinx==0.8.3 matplotlib==3.3.3 jinja2==2.11.3
 
-    # Or, for Conda
-    conda install "sphinx>=3.0" sphinx-autobuild nbsphinx Pillow
+    # Patched m2r: https://github.com/sphinx-doc/sphinx/issues/7420#issuecomment-657160798
+    pip install -U m2r2==0.2.7
 
-Install the patched ``m2r`` package for converting ``.md`` to ``.rst``.
-
-.. code-block:: bash
-
-    # https://github.com/sphinx-doc/sphinx/issues/7420
-    pip install -U -q git+https://github.com/intel-isl/m2r@dev#egg=m2r
 
 Build
 -----
